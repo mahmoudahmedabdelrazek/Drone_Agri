@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+/* CSS for home section */
+.home-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    z-index: -1;
+}
+.technology-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.technology-card {
+    width: calc(33.33% - 20px); /* Three cards in a row with spacing */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    transition: transform 0.3s ease;
+}
+
+.technology-card:hover {
+    transform: translateY(-5px); /* Add a slight lift effect on hover */
+}
+
+.technology-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.technology-card p {
+    margin-bottom: 10px;
+}
+
+.technology-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .technology-card {
+        width: calc(50% - 20px); /* Two cards in a row on smaller screens */
+    }
+}
+
+/* CSS for about section */
+.about-section {
+    text-align: center;
+    padding: 50px 0; /* Adjust as needed */
+}
+
+.about-content {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6; /* Adjust line height as needed */
+    margin-bottom: 20px;
+}
+
+.about-content img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling for the hero content */
+.hero-content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e68a00;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+#hero {
+    background-image: url('drone_agri.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#about, #technology, #contact {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+}
+
+form button {
+    width: 60%;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+    
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
